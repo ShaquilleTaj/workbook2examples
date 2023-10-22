@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Personalized Greeting</title>
+</head>
+<body>
+    <p>Name <input type="text" id="nameField" /></p>
+    <p><input id="greetBtn" type="button" value="Greet the User" /></p>
+    <p id="greetingMessage"></p>
+
+    <script src="index.js">
+        // JavaScript code for handling the button click and displaying the personalized greeting
+        document.getElementById("greetBtn").addEventListener("click", function() {
+            var name = document.getElementById("nameField").value;
+            var greetingMessage = "Hello, " + name + "!";
+            document.getElementById("greetingMessage").textContent = greetingMessage;
+        });
+        
+    </script>
+</body>
+</html>
